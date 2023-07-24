@@ -1,0 +1,161 @@
+footer {
+    background-color: $bg-color-normal;
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .footer-img {
+        width: 48px;
+        height: 48px;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    .footer-nav-menu {
+        padding: 60px 48px 45px 0;
+
+        &:hover {
+            font-weight: bold;
+            color: darkred;
+        }
+    }
+
+    .footer-contact li {
+
+        &:last-child {
+            padding-bottom: 20px;
+        }
+    }
+
+
+    .footer-link {
+        padding: 48px 0 0 0;
+    }
+
+    .footer-border {
+        border-bottom: 1px solid #fff;
+    }
+
+    .footer-phone-txt {
+        transition: .3s;
+    }
+
+    .footer-contact li:hover .footer-phone-txt {
+        border-bottom: 3px solid darkred;
+    }
+
+    .copy-txt:hover {
+        opacity: .5;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        .container {
+            padding: 32px 32px 0 32px;
+
+            .footer-border {
+                justify-content: center;
+            }
+
+            .footer-img {
+                width: 40px;
+                height: 40px;
+                margin-right: 0;
+                margin-left: 24px;
+            }
+
+            .footer-nav-menu {
+                padding: 12px 40px 0 0;
+                margin-bottom: 40px;
+            }
+
+            .footer-link {
+                padding: 0;
+            }
+
+            .footer-contact li:last-child {
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        .container {
+            padding: 0 16px;
+
+            .footer-border {
+                justify-content: space-between;
+                border-bottom: 1px solid #fff;
+            }
+
+            .footer-contact li:last-child {
+                padding-bottom: 24px;
+            }
+
+            .footer-img {
+                width: 24px;
+                height: 24px;
+                margin-left: 0;
+            }
+        }
+
+        .footer-link {
+            padding: 24px 14px 0 0;
+
+            li {
+                padding: 24px 14px 0 0;
+
+            }
+        }
+
+        .footer-phone,
+        .footer-mail {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .footer-nav {
+            display: none;
+        }
+
+        .footer-contact {
+            display: inline-block;
+            padding: 24px 0 0 0;
+
+            li {
+                margin-bottom: 8px;
+
+                &:last-child {
+                    border: 0;
+                }
+            }
+
+            .footer-phone-txt {
+                font-size: 16px;
+            }
+        }
+
+        .copy-right {
+            display: block;
+
+            p {
+                margin-bottom: 8px;
+            }
+
+            ul {
+                display: block;
+
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

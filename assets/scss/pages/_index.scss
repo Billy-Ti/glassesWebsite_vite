@@ -1,0 +1,455 @@
+// components
+.btn {
+    background-color: $bg-color-normal;
+    padding: 6px 12px;
+    color: #fff;
+}
+
+
+// home-banner
+.home-banner {
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true') center center / cover no-repeat;
+    text-align: right;
+    max-width: 100vw;
+    max-height: 100vh;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 296px 0 302px 0;
+    }
+
+    .sub-title {
+        color: $text-color-normal;
+    }
+
+    .home-title {
+        color: $text-color-normal;
+        margin-bottom: 4px;
+        font-weight: $font-weight-bold;
+    }
+
+    .btn-banner {
+        font-weight: 500;
+        transition: .5s;
+
+        &:hover {
+            border-radius: 16px;
+            box-shadow: 8px 8px 16px #650300;
+            color: #650300;
+            background-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-banner {
+        background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true') center center / cover no-repeat;
+
+        .container {
+            padding-right: 36px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .home-banner {
+        .sub-title {
+            font-size: 16px;
+        }
+
+        .home-title {
+            font-size: 24px;
+        }
+    }
+}
+
+
+
+// home-service
+
+.home-service {
+    background-color: $bg-color-home-pink;
+
+    .service-title {
+        font-weight: $font-weight-bold;
+        color: $text-color-normal;
+    }
+
+    .service-list {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            width: 23%;
+
+            img {
+                width: 83px;
+                height: 83px;
+                margin: 0 auto;
+                margin-bottom: 24px;
+            }
+
+            h3 {
+                color: $text-color-normal;
+                font-weight: $font-weight-bold;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-service {
+        .container {
+            padding: 0 36px;
+        }
+
+        .service-list {
+            justify-content: center;
+
+            li {
+                width: 46%;
+                margin: 0;
+
+                &:nth-child(odd) {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home-service {
+        .container {
+            padding: 40px 14px;
+
+            .service-title {
+                font-size: 24px;
+            }
+
+            .service-list {
+                max-width: 100%;
+                justify-content: start;
+
+                li {
+                    width: 100%;
+                    margin-bottom: 32px;
+                    padding: 0 16px;
+
+                    &:nth-child(odd) {
+                        margin-right: 0;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+// product
+.product {
+
+    .product-title {
+        font-weight: $font-weight-bold;
+        color: $text-color-normal;
+    }
+
+    .product-list {
+        li {
+            text-align: center;
+            width: 30%;
+        }
+    }
+
+    .product-type {
+        font-style: $font-style-italic;
+        color: $bg-color-normal;
+        font-family: $font-family-Roboto;
+        font-weight: $font-weight-bold;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-type {
+        font-size: 36px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        .product-list {
+            display: block;
+
+            li {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .product-type {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+
+        .product-pic {
+            width: 336px;
+            height: 336px;
+            margin: 0 auto;
+        }
+
+        .joint-product-text {
+            width: inherit;
+        }
+    }
+}
+
+// @media screen and (max-width: 767px) {
+
+//     .product {
+//         .product-list {
+//             li {
+//                 margin: 0;
+//                 width: 100%;
+//             }
+
+//             .product-pic {
+//                 width: 348px;
+//                 height: 348px;
+//                 padding: 0 16px;
+//                 margin-bottom: 8px;
+//             }
+
+//             .product-type {
+//                 margin-bottom: 24px;
+//             }
+//         }
+
+//     }
+// }
+
+// joint-name
+.joint-name {
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true') center center / cover no-repeat;
+
+    .container {
+        font-weight: $font-weight-bold;
+    }
+
+    .joint-pic {
+        width: 648px;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .joint-product-text {
+        font-style: $font-style-italic;
+        font-family: $font-family-Roboto;
+        color: $bg-color-normal;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .joint-name {
+        background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true') center center / cover no-repeat;
+
+
+        .product-card {
+            flex-direction: column;
+            align-items: center;
+
+            .joint-pic {
+                margin: 0 auto;
+            }
+
+            .project-item {
+                margin-bottom: 24px;
+            }
+
+        }
+    }
+
+}
+
+// recommend
+.recommend {
+    li {
+        width: 23%;
+    }
+
+    p:last-child {
+        color: #707070;
+    }
+
+    h4 {
+        font-weight: 500;
+    }
+
+    .text-item {
+        margin-bottom: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .recommend-title {
+        color: $text-color-normal;
+        font-weight: $font-weight-bold;
+    }
+
+    .recommend-border {
+        border: 1px solid #DEE2E6;
+        box-shadow: 0px 2px 6px #00000029;
+    }
+
+    .recommend-pic {
+        // max-width: 306px;
+        object-fit: cover;
+    }
+
+    .recommend-text {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .recommend {
+        padding: 80px 0;
+
+        .recommend-card {
+            justify-content: center;
+
+            .recommend-border {
+                width: 48%;
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 24px;
+
+                &:nth-child(odd) {
+                    margin-right: 24px;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .recommend {
+        .container {
+            padding: 0 12px;
+        }
+
+        .recommend-card {
+
+            .recommend-border {
+                width: 100%;
+
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
+            }
+
+            .recommend-pic {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
+
+// contact
+.contact {
+    background-color: #FBF2F2;
+
+    .contact-title {
+        font-weight: $font-weight-bold;
+        color: $text-color-normal;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+
+    .contact-form {
+        max-width: 636px;
+        margin: 0 auto;
+
+        .contact-des {
+            margin-bottom: 24px;
+        }
+    }
+
+    input {
+        padding: 6px 12px;
+        border: 1px solid black;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .form-feedBack {
+        padding: 6px 12px;
+        max-width: 636px;
+        height: 136px;
+        resize: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .form-checkbox {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    .btn-form {
+        width: 100%;
+        padding: 16px 0;
+        margin: 0 auto;
+        transition: .5s;
+
+        &:hover {
+            border-radius: 16px;
+            box-shadow: 8px 8px 16px #650300;
+            color: #650300;
+            background-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact {
+
+        .btn-form {
+            max-width: 336px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .contact {
+        .container {
+            padding: 40px 16px;
+        }
+
+        .btn-form {
+            max-width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+@import "base/reset";
+@import "base/variable";
+@import "base/global";
+@import "pages/index";
+@import "layout/header";
+@import "layout/footer";
+
+// 字型 : 思源黑體 TW, Regular
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
+
+// Roboto ( Medium、bold )
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
