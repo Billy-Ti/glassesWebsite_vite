@@ -35,16 +35,13 @@ footer {
         padding: 48px 0 0 0;
     }
 
-    .footer-border {
-        border-bottom: 1px solid #fff;
-    }
 
     .footer-phone-txt {
         transition: .3s;
     }
 
     .footer-contact li:hover .footer-phone-txt {
-        border-bottom: 3px solid darkred;
+        opacity: .5;
     }
 
     .copy-txt:hover {
@@ -92,7 +89,6 @@ footer {
 
             .footer-border {
                 justify-content: space-between;
-                border-bottom: 1px solid #fff;
             }
 
             .footer-contact li:last-child {
