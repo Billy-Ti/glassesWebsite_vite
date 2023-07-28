@@ -1,6 +1,10 @@
 @import "base/reset";
 
-@import "base/variable";
+@import "utils/variable";
+
+@import "utils/helpers";
+
+@import "components/button";
 
 @import "base/global";
 
