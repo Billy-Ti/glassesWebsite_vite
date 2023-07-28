@@ -19,15 +19,15 @@
     <!-- css -->
     
     <title>glasses Website - 眼鏡官網</title>
-  <script type="module" crossorigin src="/glassesWebsite_vite/assets/main-45177746.js"></script>
-  <link rel="stylesheet" href="/glassesWebsite_vite/assets/main-07485665.css">
+  <script type="module" crossorigin src="/glassesWebsite_vite/assets/main-686ed593.js"></script>
+  <link rel="stylesheet" href="/glassesWebsite_vite/assets/main-5245cace.css">
 </head>
 
 <body>
     <!-- import header -->
     <header>
     <div class="container d-flex d-flex-sb d-flex-v-center">
-        <a href="#" class="header-home">
+        <a href="index.html" class="header-home">
             <img class="header-logo d-inline-block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
                 alt="logo-white"></a>
@@ -42,7 +42,7 @@
 </header>
         <!-- banner -->
         <div class="home-banner">
-            <div class="container">
+            <div class="container d-flex d-flex-h-center d-flex-v-center">
                 <h2 class="sub-title fz-36">Promise-Desert 2020 早春系列</h2>
                 <h1 class="home-title fz-64">
                     看得清，才能看得遠
@@ -93,19 +93,19 @@
             <div class="container text-center py-80">
                 <h2 class="product-title fz-48 mb-48">經典系列鏡框</h2>
                 <ul class="product-list d-flex">
-                    <li class="mr-24">
+                    <li>
                         <img class="product-pic d-block mb-8"
                             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
                             alt="product-list-pic">
                         <h3 class="product-type mb-8 fz-48 ">OPTICAL</h3>
                     </li>
-                    <li class="mr-24">
+                    <li>
                         <img class="product-pic d-block mb-8"
                             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
                             alt="product-list-pic">
                         <h3 class="product-type mb-8 fz-48 ">SUNGLASSES</h3>
                     </li>
-                    <li class="mr-24">
+                    <li>
                         <img class="product-pic d-block mb-8"
                             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
                             alt="product-list-pic">
@@ -149,7 +149,7 @@
                                 <h4 class="mb-8">Jessy</h4>
                                 <p>眼鏡品質優良，下次還會想來這邊購買！</p>
                             </div>
-                            <p class="fz-14">2021/06/20</p>
+                            <time>2021/06/20</time>
                         </div>
                     </li>
                     <li class="recommend-border mr-24">
@@ -159,9 +159,9 @@
                         <div class="recommend-text">
                             <div class="text-item">
                                 <h4 class="mb-8">凱倫</h4>
-                                <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                                <p class="d-grow">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
                             </div>
-                            <p class="fz-14">2021/04/18</p>
+                            <time>2021/04/18</time>
                         </div>
                     </li>
                     <li class="recommend-border mr-24">
@@ -173,7 +173,7 @@
                                 <h4 class="mb-8">悠悠</h4>
                                 <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
                             </div>
-                            <p class="fz-14">2020/12/25</p>
+                            <time>2020/12/25</time>
                         </div>
                     </li>
                     <li class="recommend-border">
@@ -185,7 +185,7 @@
                                 <h4 class="mb-8">Kyuan</h4>
                                 <p>服務很好，品質沒有任何問題，非常喜歡。</p>
                             </div>
-                            <p class="fz-14">2020/10/31</p>
+                            <time>2020/10/31</time>
                         </div>
                     </li>
                 </ul>
@@ -215,9 +215,11 @@
                                 <textarea name="form-feedBack" id="text" class="form-feedBack w-100"
                                     placeholder="請輸入您的意見"></textarea>
                             </label></li>
-                        <li class="d-flex mb-48">
-                            <input type="checkbox" value="" class="form-checkbox d-block">
-                            <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+                        <li class="mb-48">
+                            <label for="agree-box" class="d-flex d-flex-v-center">
+                                <input type="checkbox" value="" id="agree-box" class="form-checkbox cursor-pointer">
+                                <span class="d-inline-block cursor-pointer">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+                            </label>
                         </li>
                         <li><a class="btn btn-form d-block text-center" href="#">確認送出</a></li>
                     </ul>
