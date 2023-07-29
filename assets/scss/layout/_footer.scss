@@ -127,11 +127,12 @@ footer {
 
             li {
                 margin-bottom: 8px;
-
-                &:last-child {
-                    border: 0;
-                }
             }
+
+            li:last-child {
+                border: 0;
+            }
+
 
             .footer-phone-txt {
                 font-size: 16px;
@@ -147,10 +148,10 @@ footer {
 
             ul {
                 display: block;
+            }
 
-                li {
-                    margin-bottom: 8px;
-                }
+            li {
+                margin-bottom: 8px;
             }
         }
     }

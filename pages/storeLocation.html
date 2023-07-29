@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='zh-Hant-TW'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto、Noto Sans TC ( normal / 500 / 700 ) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/scss/css/all.css">
+    <title>glasses Website - 門市據點</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="storeLocation container">
+            <h2 class="storeList fz-48 mb-32 fw-bold">門市據點</h2>
+            <div class="storeSelect mb-40">
+                <p class="d-inline-block fz-24 mr-16">選擇地區</p>
+                <select class="d-inline-block select-menu fz-18" name="select-menu" id="">
+                    <optgroup label="全部" class="optgroup">
+                        <option value="taipeiCity" class="test">台北市</option>
+                        <option value="taichungCity">台中市</option>
+                        <option value="kaohsiungCity">高雄市</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <div class="store-card container">
+            <div class="store-info">
+                <ul class="store-overview">
+                    <li>
+                        <img class="store-pic d-block"
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                            alt="zhongshan-Taipei-pic">
+                        <p class="store-name fz-24">台北中山旗艦店</p>
+                        <ul class="store d-flex">
+                            <li class="store-content-info d-flex">
+                                <div class="store-content d-flex">
+                                    <div class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            call
+                                        </span>
+                                        <p>電話：(02)000-1234</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            schedule
+                                        </span>
+                                        <p>營業時間：10:00-21:00</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            location_on
+                                        </span>
+                                        <p>地址：台北市中山區南京東路25巷2-1號</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-store fz-19 text-center">詳細資訊</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>

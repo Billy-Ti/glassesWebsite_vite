@@ -108,11 +108,12 @@
             li {
                 width: 46%;
                 margin: 0;
-
-                &:nth-child(odd) {
-                    margin-right: 24px;
-                }
             }
+
+            li:nth-child(odd) {
+                margin-right: 24px;
+            }
+
         }
     }
 }
@@ -133,11 +134,12 @@
                     width: 100%;
                     margin-bottom: 32px;
                     padding: 0 16px;
-
-                    &:nth-child(odd) {
-                        margin-right: 0;
-                    }
                 }
+
+                li:nth-child(odd) {
+                    margin-right: 0;
+                }
+
             }
         }
     }

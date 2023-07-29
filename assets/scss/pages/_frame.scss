@@ -64,15 +64,21 @@
 
 .optical-list {
 
-    li {
-        width: 100%;
-    }
-
     img {
         width: 960px;
         height: 296px;
         object-fit: cover;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .optical-list {
+
+        img {
+            height: 136px;
+        }
+    }
+
 }
 
 
@@ -202,4 +208,30 @@
     }
 }
 
+@media screen and (max-width: 374px) {
+
+    .pagination-pre,
+    .pagination-next {
+        padding: 4px 4px;
+    }
+
+    .pagination .pagination-num {
+        padding: 4px 8px;
+    }
+
+}
+
 // frame-sunglasses
+.product-list-sunglasses {
+    li {
+        width: calc(33.333333% - 24px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-list-sunglasses {
+        li {
+            width: calc(50% - 24px);
+        }
+    }
+}
