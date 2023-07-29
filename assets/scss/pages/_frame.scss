@@ -65,8 +65,7 @@
 .optical-list {
 
     img {
-        width: 960px;
-        height: 296px;
+        width: 100%;
         object-fit: cover;
     }
 }
@@ -225,6 +224,12 @@
 .product-list-sunglasses {
     li {
         width: calc(33.333333% - 24px);
+    }
+}
+
+.sunglasses-list {
+    img {
+        width: 100%;
     }
 }
 
