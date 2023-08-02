@@ -1,12 +1,13 @@
 // frame-optical
 
 .frame {
-    padding: 0 12px;
+    padding: 0;
 
     .frame-type {
 
         li {
-            width: 33%;
+            width: calc(100% / 3);
+            // width: 33%;
             margin-left: -1px;
             border-left: 1px solid $border-color-gray;
             border-right: 1px solid $border-color-gray;
@@ -33,6 +34,7 @@
     .frame {
         .frame-type {
             a {
+                width: 100%;
                 font-size: 24px;
                 padding: 16px;
             }
